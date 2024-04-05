@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Apply custom styles to Contact component */
+#af-height-90 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .af-max-width {
+    max-width: 1000px; /* You can adjust this value as needed */
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  /* Style headings */
+  h1 {
+    font-family: "Lobster Two", cursive;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+
+    
+  
+  h2 {
+    font-family: "Lobster Two", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-top: 20px`;
+    font-size: 1.5rem;
+
+  }
+  
+  /* Style paragraphs */
+  p {
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  

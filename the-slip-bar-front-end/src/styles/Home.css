@@ -1,0 +1,92 @@
+
+/* Common styles for all screen sizes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.button-container .btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+  border-radius: 0;
+}
+
+.button-container .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.transparent-btn {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  font-size: inherit;
+  line-height: normal;
+}
+
+.transparent-btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* Adjust the position of carousel caption */
+.carousel-caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 60px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: -5px;
+  margin-top: -10px;
+  padding: 0;
+}
+
+.carousel-caption p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    font-size: 100%;
+    padding: 30px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 95%;
+    margin-top: -5px;
+  }
+
+  .carousel-caption p {
+    font-size: 80%;
+    margin-top: -5px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 5px;
+  }
+}
