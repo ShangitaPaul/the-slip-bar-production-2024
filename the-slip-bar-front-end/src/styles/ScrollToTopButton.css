@@ -1,0 +1,30 @@
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(13, 77, 141, 0.5); /* Transparent background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+.scroll-to-top.visible {
+  display: flex;
+}
+
+.scroll-to-top:hover {
+  background-color: rgba(13, 77, 141, 0.7); /* Darken background color on hover */
+}
