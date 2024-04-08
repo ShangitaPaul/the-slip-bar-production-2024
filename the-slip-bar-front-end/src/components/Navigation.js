@@ -37,9 +37,9 @@ function Navigation() {
               <NavDropdown.Item as={Link} to="/redondo-beach">REDONDO BEACH</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/lomita">LOMITA</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="EVENTS" id="events-dropdown" className="custom-dropdown justify-content-center">
-              <NavDropdown.Item as={Link} to="/redondo-beach#events">REDONDO BEACH EVENTS</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/lomita#events">LOMITA EVENTS</NavDropdown.Item>
+            <NavDropdown title="CALENDAR" id="events-dropdown" className="custom-dropdown justify-content-center">
+              <NavDropdown.Item as={Link} to="/redondo-beach#events">REDONDO BEACH CALENDAR</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/lomita#events">LOMITA CALENDAR</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
           </Nav>

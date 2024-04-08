@@ -4,7 +4,7 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import redondoBeachCarouselImages from "../data/redondoBeachCarouselImages";
 import redondoBeachMenu1 from "../menus/redondomenupage2.jpg";
 import redondoBeachMenu2 from "../menus/redondomenupage1.jpg";
-import redondoMap from "../maps/redondoparking.png";
+// import redondoMap from "../maps/redondoparking.png";
 import redondoevents1 from "../calendar/april-events-1.jpg";
 import redondoevents2 from "../calendar/april-events-2.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -97,7 +97,7 @@ const RedondoBeach = () => {
                 margin: "0 5px", // Add margin to create space between links
               }}
             >
-              EVENTS
+              CALENDAR
             </Nav.Link>
           </Nav>
         </Container>
@@ -133,9 +133,7 @@ const RedondoBeach = () => {
         <Row>
           <Col md={4}>
             <h2 className="h2-custom">Hours of Operation</h2>
-            Opens Noon Monday-Saturday
-            <br />
-            Opens 10AM Sunday
+            Opens 11:30am daily
             <br />
           </Col>
           <Col md={4}>
@@ -143,24 +141,26 @@ const RedondoBeach = () => {
             120 N International Boardwalk, Redondo Beach, CA 90277
             <br />
             <a
-              href="https://www.google.com/maps/dir//24503+Narbonne+Ave.+Lomita,+CA+90717"
+              href="https://www.google.com/maps/dir//120+N+International+Boardwalk,+Redondo+Beach,+CA+90277"
+              target="_blank"
               rel="noreferrer"
             >
               Get Directions
             </a>
+
           </Col>
           <Col md={4}>
             <h2 className="h2-custom">Contact Information</h2>
-            Phone: <a href="tel:+14243766947">(310) 921-8940</a>
-            <br />
+            {/* Phone: <a href="tel:+14243766947">(310) 921-8940</a>
+            <br /> */}
             Email: <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
           </Col>
         </Row>
 
         <Col md={12}>
           <h2 className="h2-custom">Parking</h2>
-          Parking is available in the Redondo Beach Marina parking lot. First 2
-          hours are free.
+          We are located on the Pier. Parking information coming soon!
+          {/* hours are free.
           {redondoMap && (
             <img
               src={redondoMap}
@@ -168,8 +168,8 @@ const RedondoBeach = () => {
               className="img-fluid"
               style={{ maxWidth: "100%", border: "1px #0d4d8d solid" }}
               onError={(e) => console.error("Error loading map image:", e)}
-            />
-          )}
+            /> */}
+          
         </Col>
       </Container>
       <Container id="menu">
@@ -202,9 +202,9 @@ const RedondoBeach = () => {
         </Row>
       </Container>
       <Container id="events">
-        <h5>Events</h5>
-        <h2>Chek out <a href="https://www.instagram.com/theslipbar" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} /></a> for the latest events!
+        <h5>Calendar</h5>
+        <h2>Check out <a href="https://www.instagram.com/theslipbar" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} /></a> for the latest updates on our events!
           </h2>
            
     

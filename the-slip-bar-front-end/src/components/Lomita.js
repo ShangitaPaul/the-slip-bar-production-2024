@@ -96,7 +96,7 @@ const Lomita = () => {
                 margin: "0 5px" // Add margin to create space between links
               }}
             >
-              EVENTS
+              CALENDAR
             </Nav.Link>
           </Nav>
         </Container>
@@ -133,11 +133,7 @@ const Lomita = () => {
         <Row>
           <Col md={4}>
             <h2 className="h2-custom">Hours of Operation</h2>
-            Opens 4PM Monday-Wednesday
-            <br />
-            Opens Noon Friday-Saturday
-            <br />
-            Opens 10AM Sundays
+            Opens 11:30am daily
             <br />
           </Col>
           <Col md={4}>
@@ -146,6 +142,7 @@ const Lomita = () => {
             <br />
             <a
               href="https://www.google.com/maps/dir//24503+Narbonne+Ave.+Lomita,+CA+90717"
+              target="_blank"
               rel="noreferrer"
             >
               Get Directions
@@ -153,15 +150,15 @@ const Lomita = () => {
           </Col>
           <Col md={4}>
             <h2 className="h2-custom">Contact Information</h2>
-            Phone: <a href="tel:+14243766947">(424) 376-6947</a>
-            <br />
+            {/* Phone: <a href="tel:+14243766947">(424) 376-6947</a>
+            <br /> */}
             Email: <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
           </Col>
         </Row>
 
         <Col md={12}>
           <h2 className="h2-custom">Parking</h2>
-          Parking is available in the lot across the bar
+          Parking is available in the lot across from the front entrance on Narbonne, and also on the street on Lomita.
           {lomitaMap && (
             <img
               src={lomitaMap}
@@ -205,9 +202,9 @@ const Lomita = () => {
       </Container>
 
       <Container id="events">
-      <h5>Events</h5>
-        <h2>Chek out <a href="https://www.instagram.com/theslipbar" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} /></a> for the latest events!
+      <h5>Calendar</h5>
+        <h2>Check out <a href="https://www.instagram.com/theslipbar" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} /></a> for the latest updates on our events!
           </h2>
         <Row>
           <Col md={6}>

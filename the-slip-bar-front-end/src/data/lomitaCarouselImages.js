@@ -7,7 +7,7 @@ const lomitaCarouselImages = [
   {
     link: "/img/joints4jeremy.jpeg",
     title: "Live Music",
-    description: "Check out our live music lineup in the 'Events' section",
+    description: "Check out our Entertainment Calendar",
   },
   {
     link: "/img/lomita-patio.jpeg",

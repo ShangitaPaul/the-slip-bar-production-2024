@@ -94,6 +94,7 @@
   .navbar-toggler {
     color: #fff;
     border: none;
+    margin-top: 20px; /* Adjust top margin */
     margin-right: 5px; /* Add margin to the right */
   }
 
