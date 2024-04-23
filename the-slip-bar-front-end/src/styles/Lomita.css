@@ -1,0 +1,151 @@
+/* Add imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Marck+Script&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+/* Set body styles */
+body {
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  font-family: "Georgia", serif;
+  font-weight: 100;
+}
+
+/* Navbar styles */
+.me-auto-navbar-nav {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: none;
+}
+
+/* Hide carousel arrow controls */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+/* Contact section heading */
+.contact-heading {
+  margin-top: 20px; /* Reduce margin */
+}
+
+/* Paragraph styles */
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+/* Header styles */
+h1, h3, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: black;
+}
+
+/* Custom h2 styles */
+.h2-custom {
+  font-family: "Lobster Two", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 20px;
+  color: black;
+}
+
+/* Other header styles */
+h3, h6 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-top: 20px;
+  color: black;
+}
+
+h4 {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  color: black;
+}
+
+/* Adjusted h5 styles */
+h5 {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin: 10px 0; /* Adjusted margin */
+  position: relative;
+  color: black;
+}
+
+/* Before and after pseudo-elements for h5 */
+h5::before,
+h5::after {
+  display: flex;
+  flex-direction: column;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: #0d4d8d;
+}
+
+h5::before {
+  left: 10%;
+}
+
+h5::after {
+  right: 10%;
+}
+
+/* Menu styles */
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+/* Center-align text */
+.text-center {
+  text-align: center;
+}
+/* Adjust the width dynamically based on screen size */
+@media (max-width: 576px) {
+  h5::before {
+    width: 20%; /* Adjusted width for smaller screens */
+    left: 5%; /* Adjusted position for smaller screens */
+  }
+
+  h5::after {
+    width: 20%; /* Adjusted width for smaller screens */
+    right: 5%; /* Adjusted position for smaller screens */
+  }
+}

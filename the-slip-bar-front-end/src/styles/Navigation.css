@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Marck+Script&family=Ms+Madi&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+  align-items: center; /* Center the navbar vertically */
+  font-family: "Urbanist", sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0;
+  font-family: Optima, sans-serif;
+}
+
+.locations-dropdown {
+  font-family: "Urbanist", sans-serif;
+  font-style: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-brand img {
+  width: 300px; /* Adjust width as needed */
+  height: auto;
+  margin-left: 5px; /* Adjust margin as needed */
+}
+
+.navbar-nav {
+  flex-grow: 1; /* Allow navbar links to occupy remaining space */
+  display: flex;
+  justify-content: center; /* Center the navbar links horizontally */
+  margin-top: 30px; /* Adjust top margin */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px; /* Adjust margin between navbar links */
+}
+
+.instagram-icon {
+  display: none;
+}
+
+.navbar-with-border {
+  border-bottom: 5px #0d4d8d solid;
+  margin-bottom: 0;
+}
+
+.NavDropdown.Item {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.NavDropdown.Item a {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Navigation.css */
+.custom-dropdown .dropdown-menu {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center; /* Center the dropdown content */
+}
+
+.custom-dropdown .dropdown-toggle::after {
+  display: none; /* Hide the down arrow */
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler {
+    color: #fff;
+    border: none;
+    margin-top: 20px; /* Adjust top margin */
+    margin-right: 5px; /* Add margin to the right */
+  }
+
+  .navbar-brand img {
+    width: 250px; /* Adjust width as needed */
+    height: auto;
+  }
+
+  .instagram-icon {
+    display: contents;
+    height: auto;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+}

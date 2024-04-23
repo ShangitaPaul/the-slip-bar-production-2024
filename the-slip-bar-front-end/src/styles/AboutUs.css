@@ -1,0 +1,28 @@
+/* aboutUsStyles.css */
+
+.container {
+    max-width: 1500px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for content spacing */
+    
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Set font size for the heading */
+    color: #333; /* Set text color */
+    margin-bottom: 20px; /* Add margin at the bottom of the heading */
+  }
+  
+  .af-black {
+    color: #000; /* Set text color to black */
+  }
+  
+  .text-center {
+    text-align: center; /* Center-align text */
+  }
+  
+  .my-1 {
+    margin-top: 5px; /* Add margin at the top */
+    margin-bottom: 5px; /* Add margin at the bottom */
+  }
+  
