@@ -1,19 +1,14 @@
-// server.js
-
 const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
 const path = require('path');
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 const Home = require('./frontend/dist/src/components/home.js'); // Correct file path for Home component
 
 const app = express();
-
-app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// Serve static files from the 'frontend/dist' directory
+app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
 
 // Dummy job data with location information
 const jobs = [
@@ -28,14 +23,14 @@ const jobs = [
 ];
 
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
 
 // Routes
-app.get('/jobs', (req, res) => {
+app.get('/api/jobs', (req, res) => {
   res.json(jobs);
 });
 
-app.get('/jobs/:id', (req, res) => {
+app.get('/api/jobs/:id', (req, res) => {
   const jobId = req.params.id;
   const job = jobs.find(job => job.id === jobId);
 
@@ -47,8 +42,7 @@ app.get('/jobs/:id', (req, res) => {
 });
 
 // Serve frontend
-// Update route for the root URL to render the Home component
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   // Render the Home component to HTML
   const html = ReactDOMServer.renderToString(React.createElement(Home));
 
