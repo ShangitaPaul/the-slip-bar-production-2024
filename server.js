@@ -47,6 +47,7 @@ app.get('/jobs/:id', (req, res) => {
 });
 
 // Serve frontend
+// Update route for the root URL to render the Home component
 app.get('/', (req, res) => {
   // Render the Home component to HTML
   const html = ReactDOMServer.renderToString(React.createElement(Home));
