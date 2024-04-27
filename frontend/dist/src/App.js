@@ -23,7 +23,7 @@ function App() {
         <Route path='/redondo-beach' component={RedondoBeach} />
         <Route path='/lomita' component={Lomita} /> 
         <Route path='/contact' component={Contact} />
-        <Route path='/jobs' component={JobsPage} />
+        <Route path='/jobs' component={Jobs} />
         <Footer />  
       </div>
     </Router>
