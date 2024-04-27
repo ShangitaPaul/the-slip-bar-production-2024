@@ -22,6 +22,7 @@ function App() {
         <Route path='/redondo-beach' component={RedondoBeach} />
         <Route path='/lomita' component={Lomita} /> 
         <Route path='/contact' component={Contact} />
+        <Route path='/contact' component={Contact} />
         <Footer />  
       </div>
     </Router>
