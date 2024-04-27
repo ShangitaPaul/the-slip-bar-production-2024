@@ -3,12 +3,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path'); // 1. Import the path module
+const path = require('path');
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const Home = require('./frontend/dist/src/components/home.js'); // Correct file path for Home component
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'frontend', 'dist'))); // 2. Correct the typo in express.static
-const PORT = process.env.PORT || 5000; // 5. Use correct environment variable for Heroku
+app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
@@ -21,46 +24,7 @@ const jobs = [
     description: 'Classic Rock',
     location: 'Redondo Beach'
   },
-  {
-    id: '04/06',
-    time: '8:00 PM',
-    title: 'Tres Hombres',
-    description: 'Joke Rock',
-    location: 'Lomita'
-  },
-  {
-    id: '04/07',
-    time: '8:00 PM',
-    title: 'Taco Tuesday',
-    description: 'Get your taco fix with our delicious hard and soft shell tacos',
-    location: 'Lomita',
-    
-  },
-  {
-    id: '04/08',
-    title: 'Pizza Thursday',
-    time: '8:00 PM',
-    description: 'View our pizza menu on IG and enjoy a delicious pizza with your favorite toppings',
-    location: 'Redondo Beach'
-  },
-
-  {
-    id: '04/12',
-    title: 'Mark Fitchet Band',
-    time: '8:00 PM',
-    description: 'Classic Rock',
-    location: 'Lomita'
-  
-  },
-
-  {
-    id: '04/13',
-    title: 'Carol & The Time Travelers',
-    time: '8:00 PM',
-    description: 'Prepares and cooks food according to menu and safety specifications.',
-    location: 'Lomita'
-  
-  }
+  // Add other job objects here...
 ];
 
 // Middleware
@@ -83,8 +47,12 @@ app.get('/jobs/:id', (req, res) => {
 });
 
 // Serve frontend
-app.get('*', (req, res) => {
-  Home());
+app.get('/', (req, res) => {
+  // Render the Home component to HTML
+  const html = ReactDOMServer.renderToString(React.createElement(Home));
+
+  // Serve the rendered HTML as the response
+  res.send(html);
 });
 
 // Start server
