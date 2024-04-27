@@ -4,7 +4,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+
 const app = express();
+
+app.use(express, static(path.join(__dirname, 'frontend', 'dist')));
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
