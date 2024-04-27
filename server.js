@@ -1,14 +1,12 @@
-// server.js
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path'); // 1. Import the path module
+const path = require('path'); // Import the path module
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'frontend', 'dist'))); // 2. Correct the typo in express.static
-const PORT = process.env.PORT || 5000; // 5. Use correct environment variable for Heroku
+app.use(express.static(path.join(__dirname, 'frontend', 'dist'))); // Corrected typo in express.static
+const PORT = process.env.PORT || 5000; // Use correct environment variable for Heroku
 
 app.use(cors());
 
