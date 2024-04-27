@@ -42,7 +42,6 @@ function Navigation() {
               <NavDropdown.Item as={Link} to="/lomita#events">LOMITA CALENDAR</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
-            <Nav.Link as={Link} to="/jobs">JOBS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
