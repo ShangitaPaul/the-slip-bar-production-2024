@@ -3,12 +3,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const path = require('path'); // 1. Import the path module
 
 const app = express();
 
-app.use(express, static(path.join(__dirname, 'frontend', 'dist')));
-const PORT = process.env.PORT || 5000;
+app.use(express.static(path.join(__dirname, 'frontend', 'dist'))); // 2. Correct the typo in express.static
+const PORT = process.env.PORT || 5000; // 5. Use correct environment variable for Heroku
 
 app.use(cors());
 
@@ -80,6 +80,11 @@ app.get('/jobs/:id', (req, res) => {
   }
 
   res.json(job);
+});
+
+// Serve frontend
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
 });
 
 // Start server
