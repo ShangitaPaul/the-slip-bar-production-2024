@@ -6,7 +6,6 @@ import About from "./components/about/About";
 import RedondoBeach from "./components/RedondoBeach";
 import Lomita from "./components/Lomita";
 import Contact from "./components/Contact";
-import Jobs from "./components/JobsPage";
 import Footer from "./components/Footer";
 
 
@@ -23,7 +22,6 @@ function App() {
         <Route path='/redondo-beach' component={RedondoBeach} />
         <Route path='/lomita' component={Lomita} /> 
         <Route path='/contact' component={Contact} />
-        <Route path='/jobs' component={Jobs} />
         <Footer />  
       </div>
     </Router>
