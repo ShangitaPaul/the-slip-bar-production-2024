@@ -84,7 +84,7 @@ app.get('/jobs/:id', (req, res) => {
 
 // Serve frontend
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'dist', 'home.js'));
+  Home());
 });
 
 // Start server
