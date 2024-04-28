@@ -26,9 +26,14 @@ app.get('/favicon.ico', (req, res) => {
 
 });
 
+
 app.get('*', (req, res) => {
   // Redirect to the slipbar homepage
-  res.sendFile(__dirname + '/frontend/dist/public/index.html');
+  // if req.params[0] is not defined then send the index.html file
+  file = req.params[0] ? req.params[0] : 'index.html';
+
+  res.sendFile(__dirname + '/frontend/dist/public/' + file);
+
 });
 
 // Start server
