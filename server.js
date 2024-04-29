@@ -6,8 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Serve static files from the 'frontend/dist' directory
-app.use(express.static(path.join(__dirname, "frontend', 'dist',
-'build')));
+app.use(express.static(path.join(__dirname, 'frontend', 'dist', 'build')));
 
 // set up a jobs endpoint to return a list of jobs
 app.get('/jobs', (req, res) => {
