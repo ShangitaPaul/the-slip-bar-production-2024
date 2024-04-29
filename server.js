@@ -1,7 +1,5 @@
 const express = require('express');
 const path = require('path');
-const React = require('react');
-const ReactDOMServer = require('react-dom/server');
 //const Home = require('./frontend/dist/src/components/home.js'); // Correct file path for Home component
 
 const app = express();
